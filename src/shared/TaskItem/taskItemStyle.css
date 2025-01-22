@@ -1,0 +1,72 @@
+/* TaskItem/taskItemStyle.css */
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border-left-width: 4px;
+  margin-bottom: 0.5rem;
+  transition: transform 0.2s;
+}
+
+.task-item:hover {
+  transform: translateX(2px);
+}
+
+.task-item-personal {
+  background-color: #dcfce7;
+  border-left-color: #22c55e;
+}
+
+.task-item-trabajo {
+  background-color: #dbeafe;
+  border-left-color: #3b82f6;
+}
+
+.task-item-urgente {
+  background-color: #fee2e2;
+  border-left-color: #ef4444;
+}
+
+.task-checkbox {
+  color: #6b7280;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.task-checkbox:hover {
+  color: #374151;
+}
+
+.task-text {
+  flex: 1;
+  text-align: left;
+}
+
+.task-text.completed {
+  text-decoration: line-through;
+  color: #6b7280;
+}
+
+.task-category {
+  font-size: 0.875rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.task-delete {
+  padding: 0.25rem;
+  background: transparent;
+  border: none;
+  color: #ef4444;
+  cursor: pointer;
+  border-radius: 0.375rem;
+  transition: all 0.2s;
+}
+
+.task-delete:hover {
+  color: #dc2626;
+  background-color: #fee2e2;
+}
